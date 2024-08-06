@@ -1,0 +1,135 @@
+//
+// Form controls
+//
+
+// Customization
+.form-control {
+  // Transparent style
+  &.form-control-transparent {
+    background-color: transparent;
+    border-color: transparent;
+
+    .dropdown.show > &,
+    &:active,
+    &.active,
+    &:focus,
+    &.focus {
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+
+  // Flush
+  &.form-control-flush {
+    @include input-reset();
+  }
+}
+
+// Solid style
+.form-control.form-control-solid {
+  // background-color: $input-solid-bg;
+  // border-color: $input-solid-bg;
+  background-color: $input-custom-bg;
+  border-color: $input-solid-border;
+  color: $input-solid-color;
+  font-size: inherit;
+  @include placeholder($input-solid-placeholder-color);
+  transition: $transition-input;
+
+  .dropdown.show > &,
+  &:active,
+  &.active,
+  &:focus,
+  &.focus {
+    background-color: #fafafa;
+    // border-color: $input-solid-bg-focus;
+    color: $input-solid-color;
+    transition: $transition-input;
+  }
+}
+
+// Form control solid bg
+.form-control-solid-bg {
+  background-color: $input-solid-bg;
+}
+
+// Readonly controls as plain text
+.form-control-plaintext {
+  color: $input-plaintext-color;
+}
+
+// Placeholder colors
+.placeholder-gray-500 {
+  @include placeholder(var(--#{$prefix}gray-500));
+}
+
+.placeholder-white {
+  @include placeholder($white);
+}
+
+// Textarea reset resize
+.resize-none {
+  resize: none;
+}
+.was-validated .form-control:valid, .form-control.is-valid {
+  background-image: unset;
+}
+.was-validated .form-control:invalid, .form-control.is-invalid {
+  background-image:unset;
+  padding-right: auto;
+}
+.image-input.image-input-outline .image-input-wrapper {
+  border-radius: 85px;
+  object-fit: cover;
+}
+svg.w-6.h-6.custom_camera, .delete-icon, .edit-icon {
+  width: 31px;
+  position: absolute;
+  // fill: #919191;
+  background: #fff;
+  border-radius: 50px;
+  padding: 3px 4px;
+  transition: all 0.3s;
+}
+svg.w-6.h-6.custom_camera{
+  bottom: 14px;
+  left: 98px;
+}
+.delete-icon{
+  bottom: 0;
+  left: 0;
+}
+.edit-icon{
+  bottom: 0;
+  right: 0;
+}
+.delete-icon:hover{background: red;}
+.edit-icon:hover{background: #939393; }
+.delete-icon:hover i, .edit-icon:hover i{color: #fff;} 
+.image-input.image-input-outline {
+  position: relative;
+  cursor: pointer;
+}
+.row.mb-6.add-location-modal {
+  flex-direction: column;
+}
+button.add_location_btn {
+  background: #009ef7;
+  color: #fff;
+  padding: 11px 13px;
+  border-radius: 7px;
+  border: navajowhite;
+  margin-left: 12px;
+}
+.custom_location{
+  position: relative;
+  margin-top:39px
+}
+.custom_location::before{
+  content: "";
+  position: absolute;
+  border-top: 1px solid #f0eeee;
+  width: 100%;
+  left: 0px;
+  top:-16px
+}

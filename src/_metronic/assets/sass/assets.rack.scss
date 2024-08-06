@@ -1,0 +1,38 @@
+.table {
+    tr {
+        th {
+            // color: #8a6d3b !important;
+            // background-color: #fcf8e3;
+            // padding: 15px 7px !important;
+        }
+    }
+}
+
+// .table {
+//     tr {
+//         td {
+//             padding: 15px 7px !important;
+//         }
+//     }
+// }
+
+// .assets-details {
+//     tr {
+//         td {
+//             padding: 10px 7px !important;
+//         }
+//     }
+// }
+
+.view-assets-tabs{
+    justify-content: space-between;
+    .nav-link{
+        // color: #000;
+        font-weight: 400;
+    }
+    .nav-link.active{
+        font-weight: 700;
+        border: 0;
+        border-bottom: 2px solid #ffbe07;
+    }
+}

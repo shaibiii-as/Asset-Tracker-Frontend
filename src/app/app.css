@@ -1,0 +1,63 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body{scroll-behavior: smooth;}
+.home{font-family: "Outfit", ui-sans-serif, sans-serif; background: #fff;}
+.custom-container{max-width: 1640px;}
+.ultra-bold{font-size: 114px; }
+.h-main{font-size: 40px;}
+.mini-heading{font-size: 62px; font-weight: 100;}
+.ultra-mini-heading{font-size: 20px;}
+.main-btn{color: #000; border-radius: 4px; font-weight: 700; font-size: 18px; padding: 16px 28px !important;}
+.main-btn-white, .main-btn-white:active{background-color: #fff !important; border: 1px solid #fff;}
+.main-btn-white:hover{background-color: #FFC427 !important; color: #000 !important; border-color: #FFC427;}
+.main-btn-yellow, .main-btn-yellow:active{background-color: #FFC427 !important; border: 1px solid #FFC427;}
+.main-btn-yellow:hover{background-color: #FFC427 !important; color: #000 !important; }
+.main-round-btn{background-color: #080D42 !important; border: 1px solid #080D42; border-radius: 30px; color: #fff !important; padding: 11px 30px !important;}
+.z-2{z-index: 2;}
+.menu-accordion.show .menu-link{margin-bottom: 8px;}
+.menu-sub .menu-item .menu-link{margin-bottom: 0;}
+.hover-scroll-overlay-y::-webkit-scrollbar {
+    width: 5px;
+    padding-right: 5px;
+}  
+.hover-scroll-overlay-y::-webkit-scrollbar-track {
+    background: transparent; 
+}   
+.hover-scroll-overlay-y::-webkit-scrollbar-thumb {
+    background: #4d4d69;
+}
+  
+@media screen and (max-width:1599px){
+    .main-btn {font-size: 17px; padding: 15px 26px !important;}
+    .mini-heading{font-size: 48px;}
+    .ultra-bold {font-size: 85px;}
+    .h-main{font-size: 36px;}
+}
+@media screen and (max-width:1399px){
+    .main-btn {font-size: 16px; padding: 14px 24px !important;}
+    .mini-heading{font-size: 40px;}
+    .ultra-bold {font-size: 70px;}
+    .h-main{font-size: 34px;}
+}
+@media screen and (max-width:1199px){
+    .main-btn{font-size: 15px; padding: 13px 22px !important;}
+    .mini-heading{font-size: 33px;}
+    .ultra-bold {font-size: 57px;}
+    .h-main{font-size: 32px;}
+}
+@media screen and (max-width:991px){
+    ::-webkit-scrollbar {width: 5px; height: 3px;}
+    .custom-container {padding: 0 20px !important;}
+    .mini-heading{font-size: 27px;}
+    .ultra-bold {font-size: 50px;}
+    .h-main{font-size: 30px;}
+    .main-btn{font-size: 14px; padding: 12px 20px !important;}
+}
+@media screen and (max-width:767px){
+    .mini-heading{font-size: 18px;}
+}
+@media screen and (max-width:575px){
+    .mini-heading{font-size: 16px;}
+    .ultra-bold {font-size: 40px;}
+    .h-main{font-size: 28px;}
+    .main-btn {font-size: 13px;}
+}
